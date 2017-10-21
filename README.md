@@ -2,10 +2,11 @@
 
 [![Build Status](https://travis-ci.org/jayson/jayson-mac-ansible.svg?branch=master)](https://travis-ci.org/jayson/jayson-mac-ansible)
 
-This playbook installs all my configuration I do with a new mac laptop. 
+This playbook installs all my homebrew apps and configurations for me instead
+of manually configuring every new laptop I get.
 
 *See Also*
-  - Forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/inspired)
+  - Forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/)
 
 ## Installation
 
@@ -102,4 +103,4 @@ This project is [continuously tested on Travis CI's macOS infrastructure](https:
 
 ## Author
 
-  [Jayon Paul](http://www.jaysonmpaul.com/), 2017 (originally forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/inspired))
+  [Jayon Paul](http://www.jaysonmpaul.com/), 2017 (originally forked from [mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook) by [Jeff Geerling](http://www.jeffgeerling.com/))
