@@ -94,6 +94,10 @@ My [dotfiles](https://github.com/jayson/dotfiles) are also installed into the cu
 ### Configuration to be added:
 
   - I need to finish dotfiles setup and vim configuration
+  - Installing licenses for apps
+  - Rest of App Setup
+  - Create Inboxes
+  - 
 
 ## Testing the Playbook
 
