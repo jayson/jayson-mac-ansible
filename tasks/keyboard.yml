@@ -1,0 +1,3 @@
+---
+# Map Caps Lock to Control (Only tested in Mac OS Sierra)
+- command: 'hidutil property --set ''{"UserKeyMapping": [{"HIDKeyboardModifierMappingSrc":30064771129,"HIDKeyboardModifierMappingDst":30064771296}]}'''
