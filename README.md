@@ -24,69 +24,6 @@ You can filter which part of the provisioning process to run by specifying a set
 
     ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
 
-## Overriding Defaults
-
-Not everyone's development environment and preferred software configuration is the same.
-
-You can override any of the defaults configured in `default.config.yml` by creating a `config.yml` file and setting the overrides in that file. For example, you can customize the installed packages and apps with something like:
-
-    homebrew_installed_packages:
-      - cowsay
-      - git
-      - go
-
-    mas_installed_apps:
-      - { id: 443987910, name: "1Password" }
-      - { id: 498486288, name: "Quick Resizer" }
-      - { id: 557168941, name: "Tweetbot" }
-      - { id: 497799835, name: "Xcode" }
-
-    composer_packages:
-      - name: hirak/prestissimo
-      - name: drush/drush
-        version: '^8.1'
-
-    gem_packages:
-      - name: bundler
-        state: latest
-
-    npm_packages:
-      - name: webpack
-
-    pip_packages:
-      - name: mkdocs
-
-Any variable can be overridden in `config.yml`; see the supporting roles' documentation for a complete list of available variables.
-
-## Included Applications / Configuration (Default)
-
-Applications (installed with Homebrew Cask):
-
-  - [Docker](https://www.docker.com/)
-  - [Alfred](https://www.alfredapp.com/)
-  - [Google Chrome](https://www.google.com/chrome/)
-  - [Homebrew](http://brew.sh/)
-  - [Slack](https://slack.com/)
-  - [Vagrant](https://www.vagrantup.com/)
-  - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-
-Packages (installed with Homebrew):
-
-  - cfssl
-  - ctags
-  - fzf
-  - git
-  - kubernetes-cli
-  - mas
-  - node
-  - rbenv
-  - readline
-  - ruby
-  - the_silver_searcher
-  - vim
-  - watch
-  - wget
-
 My [dotfiles](https://github.com/jayson/dotfiles) are also installed into the current user's home directory. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 ## Future additions
