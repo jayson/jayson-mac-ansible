@@ -78,7 +78,7 @@ dockitems_to_persist:
     path: /Applications/iTerm.app
   - name: Fantastical 2
     path: /Applications/Fantastical 2.app
-  - name: Chrome
+  - name: Google Chrome
     path: /Applications/Google Chrome.app
   - name: Slack
     path: /Applications/Slack.app
