@@ -1,9 +1,9 @@
 ---
 - name: Clone dotfiles
-  git: repo={{ dotfiles_repo }}.git dest={{ dotfiles_repo_local_destination }} recursive=yes update=yes
+  git: repo={{ dotfiles_repo }}.git dest={{ dotfiles_repo_local_destination }} recursive=yes update=no
 
 - name: Set zsh as shell
-  shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
+  user: name=$user shell=/bin/zsh
 
 - name: Run dotfiles install
   command: ./install chdir="{{ dotfiles_repo_local_destination }}"

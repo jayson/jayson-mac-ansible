@@ -64,9 +64,8 @@ gem_packages:
 
 composer_packages: []
 npm_packages: []
-pip_packages:
-  - name: virtualenv
-    state: present
+pip_packages: []
+# TODO: special virtualenv setup
 
 dockitems_to_remove:
   - Launchpad
