@@ -4,9 +4,7 @@
 
 - name: Set zsh as shell
   become: yes
-  user: 
-    name: {{ user }}
-    shell: /bin/zsh
+  user: name={{ user }} shell=/bin/zsh
 
 - name: Run dotfiles install
   command: ./install chdir="{{ dotfiles_repo_local_destination }}"
