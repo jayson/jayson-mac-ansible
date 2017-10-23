@@ -1,4 +1,5 @@
 ---
+user: jpaul
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
