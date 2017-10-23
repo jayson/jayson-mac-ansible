@@ -1,0 +1,44 @@
+---
+- name: Current Dock names
+  shell: >
+    dockutil --list | python -c 'import sys; [sys.stdout.write(line.split("\t")[0] + "\n")
+    for line in sys.stdin]'
+  register: dockitems
+  changed_when: false
+- set_fact:
+    x: '{{ dockitems_to_remove | intersect(dockitems.stdout_lines) }}'
+- name: Remove Dock items
+  shell: dockutil --remove '{{ item }}'
+  with_items: '{{ x }}'
+- set_fact: y='{{ dockitems_to_persist|map(attribute="name")|list }}'
+- set_fact:
+    x: '{{ y | difference(dockitems.stdout_lines) }}'
+- name: Add Dock items
+  shell: >
+    dockutil --find '{{ item.name }}' ||
+    dockutil --add '{{ item.path }}'
+  with_items: '{{ dockitems_to_persist }}'
+  when: '{{ x != [] }}'
+#
+# dockutil is installed via brew
+#
+# Variables needed look like this:
+#
+# dockitems_to_remove:
+#   - Launchpad
+#   - Contacts
+#   - Notes
+#   - Reminders
+#   - Maps
+#   - Pages
+#   - Photos
+#   - FaceTime
+#   - iBooks
+#   - App Store
+#   - System Preferences
+#
+# dockitems_to_persist:
+#   - name: VirtualBox
+#     path: /Applications/VirtualBox.app
+#   - name: Terminal
+#     path: /Applications/Utilities/Terminal.app

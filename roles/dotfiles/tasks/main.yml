@@ -1,0 +1,13 @@
+---
+- name: Clone dotfiles
+  git: repo={{ dotfiles_repo }}.git dest={{ dotfiles_repo_local_destination }} recursive=yes update=no
+
+- name: Set zsh as shell
+  shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
+
+- name: Run dotfiles install
+  chdir: {{ dotfiles_repo_local_destination }}
+  command: ./install
+
+- name: Install Vim Plugins
+  command: vim +PlugInstall +qall
