@@ -6,8 +6,7 @@
   shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
 
 - name: Run dotfiles install
-  chdir: {{ dotfiles_repo_local_destination }}
-  command: ./install
+  command: ./install chdir="{{ dotfiles_repo_local_destination }}"
 
 - name: Install Vim Plugins
   command: vim +PlugInstall +qall
