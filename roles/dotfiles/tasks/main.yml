@@ -3,7 +3,10 @@
   git: repo={{ dotfiles_repo }}.git dest={{ dotfiles_repo_local_destination }} recursive=yes update=yes
 
 - name: Set zsh as shell
-  user: name={{ user }} shell=/bin/zsh
+  become: yes
+  user: 
+    name: {{ user }}
+    shell: /bin/zsh
 
 - name: Run dotfiles install
   command: ./install chdir="{{ dotfiles_repo_local_destination }}"
