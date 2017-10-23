@@ -75,11 +75,11 @@ dockitems_to_remove:
 
 dockitems_to_persist:
   - name: iTerm
-    path: /Applications/iTerm2.app
+    path: /Applications/iTerm.app
   - name: Fantastical 2
     path: /Applications/Fantastical 2.app
   - name: Chrome
-    path: /Applications/Chrome.app
+    path: /Applications/Google Chrome.app
   - name: Slack
     path: /Applications/Slack.app
 
