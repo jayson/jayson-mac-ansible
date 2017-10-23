@@ -58,7 +58,7 @@ osx_script: "~/.osx --no-restart"
 
 gem_packages:
   - name: bundler
-    state: present # present/absent/latest, default: present
+    state: present  # present/absent/latest, default: present
 
 dockitems_to_remove:
   - Launchpad
