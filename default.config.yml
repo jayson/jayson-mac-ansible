@@ -5,7 +5,7 @@ configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/jayson/dotfiles.git
+dotfiles_repo: https://github.com/jayson/dotfiles
 dotfiles_repo_local_destinationdotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/projects/dotfiles
 dotfiles_files:
