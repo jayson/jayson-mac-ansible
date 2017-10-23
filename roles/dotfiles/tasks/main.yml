@@ -1,6 +1,6 @@
 ---
 - name: Clone dotfiles
-  git: repo={{ dotfiles_repo }}.git dest={{ dotfiles_repo_local_destination }} recursive=yes update=no
+  git: repo={{ dotfiles_repo }}.git dest={{ dotfiles_repo_local_destination }} recursive=yes update=yes
 
 - name: Set zsh as shell
   shell: defaults write com.apple.Terminal 'Shell' -string '/bin/zsh'
