@@ -60,10 +60,11 @@ gem_packages:
   - name: bundler
     state: present  # present/absent/latest, default: present
 
-composer_package: []
+composer_packages: []
 npm_packages: []
-pip_packages: []
-
+pip_packages:
+  - name: virtualenv
+    state: present
 
 dockitems_to_remove:
   - Launchpad
