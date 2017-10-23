@@ -82,14 +82,21 @@ dockitems_to_remove:
   - System Preferences
 
 dockitems_to_persist:
+  - name: Notes
+    path: /Applications/Notes.app
+    position: 2
   - name: iTerm
     path: /Applications/iTerm.app
+    position: 3
   - name: Fantastical 2
     path: /Applications/Fantastical 2.app
+    position: 4
   - name: Google Chrome
     path: /Applications/Google Chrome.app
+    position: 5
   - name: Slack
     path: /Applications/Slack.app
+    position: 6
 
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
