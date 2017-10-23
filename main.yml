@@ -16,6 +16,8 @@
       tags: ['mas']
     - role: dock
       tags: ['dock']
+    - role: iterm
+      tags: ['iterm']
 
   tasks:
     - include: tasks/ansible-setup.yml
