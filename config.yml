@@ -80,6 +80,7 @@ dockitems_to_remove:
   - iBooks
   - App Store
   - System Preferences
+  - Downloads
 
 dockitems_to_persist:
   - name: Notes
