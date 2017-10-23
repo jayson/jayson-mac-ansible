@@ -60,6 +60,11 @@ gem_packages:
   - name: bundler
     state: present  # present/absent/latest, default: present
 
+composer_package: []
+npm_packages: []
+pip_packages: []
+
+
 dockitems_to_remove:
   - Launchpad
   - Contacts
