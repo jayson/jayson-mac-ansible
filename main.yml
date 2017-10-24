@@ -11,13 +11,12 @@
     - role: dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
-    - role: geerlingguy.mas
-      when: mas_installed_apps
-      tags: ['mas']
     - role: dock
       tags: ['dock']
     - role: iterm
       tags: ['iterm']
+    - role: keyboard
+      tags: ['keyboard']
 
   tasks:
     - include: tasks/ansible-setup.yml
@@ -31,9 +30,6 @@
 
     - include: tasks/extra-packages.yml
       tags: ['extra-packages']
-
-    - include: tasks/keyboard.yml
-      tags: ['keyboard']
 
     - name: Run configured post-provision ansible task files.
       include: "{{ outer_item }}"
