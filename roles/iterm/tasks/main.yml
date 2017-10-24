@@ -1,2 +1,3 @@
 ---
-# TODO: Re-do with dynamic profiles
+- name: Apply iterm2 profile
+  copy: src=profile.plist dest="~/Library/Application Support/iTerm2/DynamicProfiles"
