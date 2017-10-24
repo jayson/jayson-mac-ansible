@@ -1,6 +1,2 @@
 ---
-- name: Set custom preferences folder
-  command: 'defaults write com.googlecode.iterm2 PrefsCustomFolder "/Users/jpaul/projects/jayson-mac-ansible/roles/iterm/files/"'
-
-- name: Set load from custom preferences folder
-  command: defaults write LoadPrefsFromCustomFolder -int 1
+# TODO: Re-do with dynamic profiles
