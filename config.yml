@@ -60,7 +60,7 @@ mas_installed_apps: []
 mas_email: "jaysonpaul@gmail.com"
 mas_password: ""
 
-osx_script: "~/.osx --no-restart"
+osx_script: "/Users/jpaul/.osx --no-restart"
 
 gem_packages:
   - name: bundler
