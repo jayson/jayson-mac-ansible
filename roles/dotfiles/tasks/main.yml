@@ -1,6 +1,9 @@
 ---
 - name: Clone dotfiles
-  git: repo={{ dotfiles_repo }}.git dest={{ dotfiles_repo_local_destination }} recursive=yes update=yes
+  git: repo={{ dotfiles_repo }} dest={{ dotfiles_repo_local_destination }} recursive=yes update=yes
+
+- name: Set push url
+  command: git remote set-url origin --push {{ dotfiles_push_url }} chdir="{{ dotfiles_repo_local_destination }}"
 
 - name: Set zsh as shell
   become: yes

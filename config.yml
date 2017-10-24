@@ -6,8 +6,8 @@ configure_dotfiles: yes
 configure_sudoers: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/jayson/dotfiles
-dotfiles_repo_local_destinationdotfiles_repo_accept_hostkey: yes
+dotfiles_repo: https://github.com/jayson/dotfiles.git
+dotfiles_push_url: git@github.com:jayson/dotfiles.git
 dotfiles_repo_local_destination: ~/projects/dotfiles
 dotfiles_files:
   - .bash_profile
@@ -69,8 +69,11 @@ gem_packages:
 
 composer_packages: []
 npm_packages: []
-pip_packages: []
-# TODO: special virtualenv setup
+pip_packages:
+  - name: virtualenv
+    state: present
+extra_packages_cmds:
+  - cmd: pip install virtualenvwrapper --ignore-installed six
 
 dockitems_to_remove:
   - Launchpad
