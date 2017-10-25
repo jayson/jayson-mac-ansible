@@ -1,3 +1,6 @@
 ---
+- name: Create directory
+  file: state=directory path="~/.config/karabiner"
+  
 - name: Apply karabiner profile
   copy: src=karabiner.json dest="~/.config/karabiner/karabiner.json"
