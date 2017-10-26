@@ -53,6 +53,8 @@ homebrew_cask_apps:
   - fantastical
   - spectacle
   - dashlane
+  - little-snitch
+  - micro-snitch
   - font-robotomono-nerd-font
   - karabiner-elements
 
