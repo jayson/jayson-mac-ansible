@@ -57,6 +57,7 @@ homebrew_cask_apps:
   - micro-snitch
   - font-robotomono-nerd-font
   - karabiner-elements
+  - insomniax
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
