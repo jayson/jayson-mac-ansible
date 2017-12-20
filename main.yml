@@ -15,8 +15,6 @@
       tags: ['dock']
     - role: iterm
       tags: ['iterm']
-    - role: keyboard
-      tags: ['keyboard']
 
   tasks:
     - include: tasks/ansible-setup.yml
