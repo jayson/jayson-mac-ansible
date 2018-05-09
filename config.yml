@@ -30,7 +30,10 @@ homebrew_installed_packages:
   - node
   - rbenv
   - readline
+  - ripgrep
   - ruby
+  - socat
+  - datawire/blackbird/telepresence
   - the_silver_searcher
   - vim
   - watch
@@ -40,6 +43,7 @@ homebrew_taps:
   - homebrew/core
   - caskroom/cask
   - caskroom/fonts
+  - osxfuse
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
