@@ -66,7 +66,7 @@ homebrew_cask_apps:
   - micro-snitch
   - font-robotomono-nerd-font
   - insomniax
-  - beardedspice
+  - vscode
   - xquartz
 
 # See `geerlingguy.mas` role documentation for usage instructions.
