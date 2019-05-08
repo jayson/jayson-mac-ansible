@@ -43,21 +43,21 @@ homebrew_installed_packages:
   - vim
   - watch
   - wget
+  - zplug
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
   - caskroom/fonts
-  - osxfuse
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - docker
   - alfred
-  - google-chrome
-  - slack
+#  - google-chrome
+#  - slack
   - vagrant
-  - virtualbox
+#  - virtualbox
   - iterm2
   - fantastical
   - spectacle
@@ -68,6 +68,7 @@ homebrew_cask_apps:
   - insomniax
   - vscode
   - xquartz
+  - osxfuse
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -82,11 +83,7 @@ gem_packages:
 
 composer_packages: []
 npm_packages: []
-pip_packages:
-  - name: virtualenv
-    state: present
-extra_packages_cmds:
-  - cmd: pip install virtualenvwrapper --ignore-installed six
+pip_packages: []
 
 dockitems_to_remove:
   - Launchpad

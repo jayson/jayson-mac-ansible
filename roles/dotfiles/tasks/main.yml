@@ -12,5 +12,3 @@
 - name: Run dotfiles install
   command: ./install chdir="{{ dotfiles_repo_local_destination }}"
 
-- name: Install Vim Plugins
-  command: vim +PlugInstall +qall
