@@ -18,7 +18,6 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - python
   - ccat
   - cfssl
   - ctags
@@ -31,19 +30,23 @@ homebrew_installed_packages:
   - kubernetes-cli
   - kubectx
   - mas
+  - neofetch
   - node
+  - ranger
+  - python
   - rbenv
   - readline
   - ripgrep
   - ruby
   - socat
-  - datawire/blackbird/telepresence
   - stern
+  - datawire/blackbird/telepresence
   - the_silver_searcher
   - vim
   - watch
   - wget
   - zplug
+  - zsh
 
 homebrew_taps:
   - homebrew/core
