@@ -55,23 +55,28 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
   - alfred
 #  - google-chrome
 #  - slack
   - vagrant
 #  - virtualbox
-  - iterm2
-  - fantastical
-  - spectacle
   - dashlane
+  - docker
+  - fantastical
+  - font-robotomono-nerd-font
+  - google-chrome
+  - gpg-suite
+  - insomniax
+  - iterm2
   - little-snitch
   - micro-snitch
-  - font-robotomono-nerd-font
-  - insomniax
+  - slack
+  - spectacle
+  - vagrant
+  - virtualbox
   - vscode
   - xquartz
-  - osxfuse
+#  - osxfuse
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
